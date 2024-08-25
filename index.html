@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Monitoring</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Line Monitoring</h1>
+        <div class="date-time">
+            <span id="date"></span>
+            <span id="time"></span>
+        </div>
+        <div class="operator">
+            <span>Operator: Mbah</span>
+        </div>
+    </div>
+    
+    <!-- Container for sidebar and main content -->
+    <div class="main-container d-flex">
+        <div class="sidebar">
+            <button>Home</button>
+            <button>Line</button>
+            <button>Machine</button>
+            <button>Report</button>
+            <button>Schedule</button>
+            <button>Input QC</button>
+            <button>Input Produksi</button>
+            <button>Setup</button>
+        </div>
+        
+        <!-- Content Section -->
+        <div class="content d-flex justify-content-between">
+            <!-- Card Container -->
+            <div class="card-container">
+                <!-- Generate 28 cards -->
+                <div class="card">
+                    <div class="card-header-green">
+                        <span style="color: black;">A-01</span>
+                        <span style="color: black;">Running</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 95,1 %</div>
+                        <div class="status">
+                            <div>Good</div>
+                            <div>700 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>380 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-green">
+                        <span style="color: black;">A-02</span>
+                        <span style="color: black;">Running</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 95,1 %</div>
+                        <div class="status">
+                            <div>Good</div>
+                            <div>700 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>380 Min</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header-yellow">
+                        <span style="color: black;">A-03</span>
+                        <span style="color: black;">Setting</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 87,1 %</div>
+                        <div class="status">
+                            <div>Average</div>
+                            <div>600 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>340 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-green">
+                        <span style="color: black;">A-04</span>
+                        <span style="color: black;">Running</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 95,1 %</div>
+                        <div class="status">
+                            <div>Good</div>
+                            <div>700 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>380 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-yellow">
+                        <span style="color: black;">A-05</span>
+                        <span style="color: black;">Setting</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 87,1 %</div>
+                        <div class="status">
+                            <div>Average</div>
+                            <div>600 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>340 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-green">
+                        <span style="color: black;">A-06</span>
+                        <span style="color: black;">Running</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 95,1 %</div>
+                        <div class="status">
+                            <div>Good</div>
+                            <div>700 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>380 Min</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header-red">
+                        <span style="color: black;">A-07</span>
+                        <span style="color: black;">Breakdown</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 77,1 %</div>
+                        <div class="status">
+                            <div>Poor</div>
+                            <div>500 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>280 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-green">
+                        <span style="color: black;">A-08</span>
+                        <span style="color: black;">Running</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 95,1 %</div>
+                        <div class="status">
+                            <div>Good</div>
+                            <div>700 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>380 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-green">
+                        <span style="color: black;">A-09</span>
+                        <span style="color: black;">Running</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 95,1 %</div>
+                        <div class="status">
+                            <div>Good</div>
+                            <div>700 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>380 Min</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header-yellow">
+                        <span style="color: black;">A-10</span>
+                        <span style="color: black;">Setting</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 87,1 %</div>
+                        <div class="status">
+                            <div>Average</div>
+                            <div>600 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>340 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-green">
+                        <span style="color: black;">A-11</span>
+                        <span style="color: black;">Running</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 95,1 %</div>
+                        <div class="status">
+                            <div>Good</div>
+                            <div>700 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>380 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-yellow">
+                        <span style="color: black;">A-12</span>
+                        <span style="color: black;">Setting</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 87,1 %</div>
+                        <div class="status">
+                            <div>Average</div>
+                            <div>600 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>340 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-green">
+                        <span style="color: black;">A-13</span>
+                        <span style="color: black;">Running</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 95,1 %</div>
+                        <div class="status">
+                            <div>Good</div>
+                            <div>700 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>380 Min</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header-red">
+                        <span style="color: black;">A-14</span>
+                        <span style="color: black;">Breakdown</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 77,1 %</div>
+                        <div class="status">
+                            <div>Poor</div>
+                            <div>500 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>280 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-green">
+                        <span style="color: black;">A-15</span>
+                        <span style="color: black;">Running</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 95,1 %</div>
+                        <div class="status">
+                            <div>Good</div>
+                            <div>700 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>380 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-green">
+                        <span style="color: black;">A-16</span>
+                        <span style="color: black;">Running</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 95,1 %</div>
+                        <div class="status">
+                            <div>Good</div>
+                            <div>700 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>380 Min</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header-yellow">
+                        <span style="color: black;">A-17</span>
+                        <span style="color: black;">Setting</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 87,1 %</div>
+                        <div class="status">
+                            <div>Average</div>
+                            <div>600 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>340 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-green">
+                        <span style="color: black;">A-18</span>
+                        <span style="color: black;">Running</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 95,1 %</div>
+                        <div class="status">
+                            <div>Good</div>
+                            <div>700 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>380 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-yellow">
+                        <span style="color: black;">A-19</span>
+                        <span style="color: black;">Setting</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 87,1 %</div>
+                        <div class="status">
+                            <div>Average</div>
+                            <div>600 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>340 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-green">
+                        <span style="color: black;">A-20</span>
+                        <span style="color: black;">Running</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 95,1 %</div>
+                        <div class="status">
+                            <div>Good</div>
+                            <div>700 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>380 Min</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header-red">
+                        <span style="color: black;">A-21</span>
+                        <span style="color: black;">Breakdown</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 77,1 %</div>
+                        <div class="status">
+                            <div>Poor</div>
+                            <div>500 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>280 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-blue">
+                        <span style="color: black;">A-22</span>
+                        <span style="color: black;">Off</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 0 %</div>
+                        <div class="status">
+                            <div>Stopped</div>
+                            <div>0 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>0 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-blue">
+                        <span style="color: black;">A-23</span>
+                        <span style="color: black;">Off</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 0 %</div>
+                        <div class="status">
+                            <div>Stopped</div>
+                            <div>0 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>0 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-blue">
+                        <span style="color: black;">A-24</span>
+                        <span style="color: black;">Off</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 0 %</div>
+                        <div class="status">
+                            <div>Stopped</div>
+                            <div>0 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>0 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-blue">
+                        <span style="color: black;">A-25</span>
+                        <span style="color: black;">Off</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 0 %</div>
+                        <div class="status">
+                            <div>Stopped</div>
+                            <div>0 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>0 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-blue">
+                        <span style="color: black;">A-26</span>
+                        <span style="color: black;">Off</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 0 %</div>
+                        <div class="status">
+                            <div>Stopped</div>
+                            <div>0 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>0 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-blue">
+                        <span style="color: black;">A-27</span>
+                        <span style="color: black;">Off</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 0 %</div>
+                        <div class="status">
+                            <div>Stopped</div>
+                            <div>0 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>0 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header-blue">
+                        <span style="color: black;">A-28</span>
+                        <span style="color: black;">Off</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="oee">OEE 0 %</div>
+                        <div class="status">
+                            <div>Stopped</div>
+                            <div>0 Rtig</div>
+                        </div>
+                        <div class="details">
+                            <div>Uptime</div>
+                            <div>0 Min</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Panel -->
+            <div class="right-panel">
+                <div>
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="details">
+                    <p><strong>Availability:</strong> 90 %</p>
+                    <p><strong>Performance:</strong> 80 %</p>
+                    <p><strong>Quality:</strong> 70 %</p>
+                </div>
+                <div class="details">
+                    <p><strong>COUNTER:</strong> 12345 Box</p>
+                    <p><strong>Down Time:</strong> 100 Menit</p>
+                    <p><strong>Operator:</strong> Adam</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+      
+        new Chart(ctx, {
+          type: 'doughnut',
+          data: {
+            labels: [
+    'Green',
+    'Grey'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [300, 100],
+    backgroundColor: [
+      'rgb(0, 255, 0)',
+      'rgb(172, 172, 172)'
+    ],
+    hoverOffset: 2
+  }]
+          }
+        });
+      </script>
+      
+      <script>
+        function updateClock() {
+            const now = new Date();
+
+            // Format tanggal
+            // Format tanggal dengan nama bulan
+            const daysOfWeek = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+            const monthsOfYear = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 
+                                  'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+            const dayName = daysOfWeek[now.getDay()];
+            const day = now.getDate().toString().padStart(2, '0');
+            const monthName = monthsOfYear[now.getMonth()];
+            const year = now.getFullYear();
+            const dateString = `${dayName}, ${day} ${monthName} ${year}`;
+            document.getElementById('date').textContent = dateString;
+
+            //Format Waktu
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('time').textContent = timeString;
+        }
+
+        // Update clock every second
+        setInterval(updateClock, 1000);
+
+        // Initial call to display the clock immediately
+        updateClock();
+    </script>
+</body>
+</html>
